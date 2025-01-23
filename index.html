@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Профессиональная тонировка автомобилей в Пензе. Качественные услуги по тонировке стёкол и защите кузова.">
+  <meta name="keywords" content="тонировка, Пенза, автотонировка, защитная плёнка, атермальная тонировка">
+  <meta name="author" content="Тонировка58">
+  <title>Тонировочный сервис в Пензе | Тонировка58</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Шапка сайта -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <i class="fas fa-car"></i>
+        <span>Тонировка</span>
+        <span class="accent">58</span>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home"><i class="fas fa-home"></i> Главная</a></li>
+          <li><a href="#services"><i class="fas fa-tools"></i> Услуги</a></li>
+          <li><a href="#portfolio"><i class="fas fa-images"></i> Портфолио</a></li>
+          <li><a href="#about"><i class="fas fa-users"></i> О нас</a></li>
+          <li><a href="#contacts"><i class="fas fa-phone"></i> Контакты</a></li>
+          <li><a href="#appointment" class="btn"><i class="fas fa-calendar-check"></i> Записаться</a></li>
+        </ul>
+        <div class="burger" id="burger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Главная страница -->
+  <section id="home" class="hero">
+    <div class="video-background">
+      <video autoplay muted loop playsinline id="heroVideo">
+        <source src="video/car-workshop-logo.mp4" type="video/mp4">
+      </video>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="container">
+      <h1>Профессиональная тонировка автомобилей в Пензе</h1>
+      <div class="typing-text" id="typingText"></div>
+      <a href="#appointment" class="btn">Записаться</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2><span>Наши Услуги</span></h2>
+      <div class="service-list">
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <div class="hint-animation">
+                <i class="fas fa-hand-pointer"></i>
+                <span>Нажмите, чтобы узнать больше</span>
+              </div>
+              <i class="fas fa-car-side fa-3x"></i>
+              <h3>Тонировка передних и задних стёкол</h3>
+              <p>Качественная тонировка с гарантией.</p>
+            </div>
+            <div class="service-back">
+              <h4>Этапы работы:</h4>
+              <ol>
+                <li>Очистка стёкол</li>
+                <li>Подготовка плёнки</li>
+                <li>Нанесение состава</li>
+                <li>Установка плёнки</li>
+                <li>Просушка</li>
+              </ol>
+              <p class="time">Время работы: 2-3 часа</p>
+              <p class="warranty">Гарантия: 1 год</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <i class="fas fa-sun fa-3x"></i>
+              <h3>Атермальная тонировка</h3>
+              <p>Защита от солнца и перегрева салона.</p>
+            </div>
+            <div class="service-back">
+              <h4>Преимущества:</h4>
+              <ul>
+                <li>Защита от УФ на 99%</li>
+                <li>Снижение нагрева</li>
+                <li>Защита от выгорания</li>
+                <li>Прозрачность по ГОСТ</li>
+              </ul>
+              <p class="time">Время работы: 3-4 часа</p>
+              <p class="warranty">Гарантия: 2 года</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <i class="fas fa-shield-alt fa-3x"></i>
+              <h3>Защитная плёнка на кузов</h3>
+              <p>Защита от царапин и сколов.</p>
+            </div>
+            <div class="service-back">
+              <h4>Зоны защиты:</h4>
+              <ul>
+                <li>Капот и бампер</li>
+                <li>Фары и зеркала</li>
+                <li>Пороги и двери</li>
+                <li>Полная оклейка</li>
+              </ul>
+              <p class="time">Время работы: 1-2 дня</p>
+              <p class="warranty">Гарантия: 3 года</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <i class="fas fa-eraser fa-3x"></i>
+              <h3>Снятие старой тонировки</h3>
+              <p>Быстро и без повреждений стекла.</p>
+            </div>
+            <div class="service-back">
+              <h4>Процесс работы:</h4>
+              <ol>
+                <li>Размягчение плёнки</li>
+                <li>Аккуратное удаление</li>
+                <li>Очистка остатков клея</li>
+                <li>Обезжиривание</li>
+              </ol>
+              <p class="time">Время работы: 1-2 часа</p>
+              <p class="price">Бесплатно при тонировке</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <i class="fas fa-tint fa-3x"></i>
+              <h3>Тонировка фар</h3>
+              <p>Стильный внешний вид и защита оптики.</p>
+            </div>
+            <div class="service-back">
+              <h4>Особенности:</h4>
+              <ul>
+                <li>Светопропускаемость по ГОСТ</li>
+                <li>Защита от сколов</li>
+                <li>Стильный вид</li>
+                <li>Долговечное покрытие</li>
+              </ul>
+              <p class="time">Время работы: 2-3 часа</p>
+              <p class="warranty">Гарантия: 1 год</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="service-inner">
+            <div class="service-front">
+              <i class="fas fa-magic fa-3x"></i>
+              <h3>Полировка фар</h3>
+              <p>Восстановление прозрачности и яркости.</p>
+            </div>
+            <div class="service-back">
+              <h4>Этапы работы:</h4>
+              <ol>
+                <li>Очистка поверхности</li>
+                <li>Шлифовка повреждений</li>
+                <li>Поэтапная полировка</li>
+                <li>Защитное покрытие</li>
+              </ol>
+              <p class="time">Время работы: 1-2 часа</p>
+              <p class="warranty">Гарантия: 6 месяцев</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Портфолио -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2><span>Наши работы</span></h2>
+      <div class="carousel-container">
+        <div class="carousel" id="workCarousel">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="img/ton1.jpg" alt="Тонировка стекол" loading="lazy">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/ton2.jpg" alt="Атермальная тонировка" loading="lazy">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/ton3.jpg" alt="Защитная пленка" loading="lazy">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/ton4.jpg" alt="Тонировка фар" loading="lazy">
+            </div>
+            <div class="carousel-slide">
+              <img src="img/ton5.jpg" alt="Полировка фар" loading="lazy">
+            </div>
+            <div class="carousel-slide">
+            <img src="img/ton6.jpg" alt="Полировка фар" loading="lazy">
+            </div>
+          </div>
+          <button class="carousel-button prev" aria-label="Предыдущий слайд">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-button next" aria-label="Следующий слайд">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Модальное окно для просмотра фото -->
+  <div class="modal" id="imageModal">
+    <button class="modal-close">
+      <i class="fas fa-times"></i>
+    </button>
+    <div class="modal-content">
+      <div class="modal-track"></div>
+      <button class="modal-nav prev">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="modal-nav next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <div class="modal-dots"></div>
+  </div>
+
+  <!-- О нас -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2><span>О нас</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p class="lead">Мы — команда профессионалов с многолетним опытом в тонировке автомобилей.</p>
+          <div class="about-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Более 10 лет опыта работы</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-trophy"></i>
+              <span>Сертифицированные специалисты</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-tools"></i>
+              <span>Современное оборудование</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-heart"></i>
+              <span>Более 1000 довольных клиентов</span>
+            </div>
+          </div>
+        </div>
+        <div class="team">
+          <h3>Наш старший мастер:</h3>
+          <div class="team-member">
+            <div class="member-photo">
+              <img src="img/suraev.jpg" alt="Сураев Александр - старший мастер">
+            </div>
+            <div class="member-info">
+              <h4>Сураев Александр</h4>
+              <p class="position">Старший мастер</p>
+              <div class="member-details">
+                <p><i class="fas fa-star"></i> Опыт работы более 10 лет</p>
+                <p><i class="fas fa-certificate"></i> Профессиональная сертификация</p>
+                <p><i class="fas fa-car"></i> Специализация на премиум-автомобилях</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-footer">
+          <p class="quote">"Наша миссия — обеспечить максимальный комфорт и безопасность вашего автомобиля. Мы не просто тонируем стекла, мы создаем защиту и стиль для вашего авто."</p>
+          <a href="#appointment" class="btn about-cta">Записаться к нам</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2><span>Контакты</span></h2>
+      <div class="contacts-content">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Адрес</h3>
+              <p>г. Пенза, ул. Примерная, д. 123</p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Телефон</h3>
+              <p><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p><a href="mailto:tonirovka@example.com">tonirovka@example.com</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="contact-details">
+              <h3>Режим работы</h3>
+              <p>Пн-Пт: 9:00 - 19:00</p>
+              <p>Сб: 10:00 - 17:00</p>
+              <p>Вс: выходной</p>
+            </div>
+          </div>
+        </div>
+        <div class="map-container">
+          <div class="map">
+            <iframe src="https://yandex.ru/map-widget/v1/-/CCUBVKhwkD" 
+                    width="100%" 
+                    height="400" 
+                    frameborder="0" 
+                    allowfullscreen="true">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div class="social-links">
+        <h3>Мы в социальных сетях</h3>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="#" class="social-icon" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+            <span>Telegram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Записаться -->
+  <section id="appointment" class="appointment">
+    <div class="container">
+      <h2><span>Записаться на тонировку</span></h2>
+      <form id="appointment-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Ваш телефон" required>
+        <input type="text" placeholder="Марка автомобиля">
+        <input type="date" placeholder="Дата" required>
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Виджет обратного звонка -->
+  <div class="callback-widget" id="callbackWidget">
+    <button class="callback-button">
+      <i class="fas fa-phone-volume"></i>
+      <span class="ripple"></span>
+    </button>
+    <div class="callback-popup">
+      <div class="callback-header">
+        <h3>Заказать звонок</h3>
+        <button class="close-callback" id="closeCallback">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="callbackForm" class="callback-form">
+        <input type="text" placeholder="Ваше имя" required>
+        <input type="tel" placeholder="Ваш телефон" required>
+        <select required>
+          <option value="" disabled selected>Выберите время</option>
+          <option value="asap">Как можно скорее</option>
+          <option value="morning">Утро (9:00 - 12:00)</option>
+          <option value="afternoon">День (12:00 - 18:00)</option>
+          <option value="evening">Вечер (18:00 - 21:00)</option>
+        </select>
+        <button type="submit" class="callback-submit">
+          <i class="fas fa-paper-plane"></i> Жду звонка
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Кнопка прокрутки вверх -->
+  <button class="scroll-to-top" id="scrollToTop" aria-label="Прокрутить вверх">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <div class="logo">Тонировка58</div>
+      <p>© 2025 Тонировочный сервис, Пенза</p>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
