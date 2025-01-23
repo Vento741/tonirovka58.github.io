@@ -1977,11 +1977,90 @@ footer p {
   font-size: 16px;
   font-family: inherit;
   transition: border-color 0.3s;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+}
+
+.appointment input[type="date"] {
+  appearance: none;
+  -webkit-appearance: none;
+  position: relative;
+  background-color: var(--light-color);
+  padding: 15px;
+  color: var(--dark-color);
+}
+
+.appointment input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: auto;
+  opacity: 0.5;
+}
+
+.appointment input[type="date"]::-webkit-datetime-edit {
+  color: var(--dark-color);
+}
+
+.appointment input[type="date"]::-webkit-datetime-edit-fields-wrapper {
+  color: var(--dark-color);
+}
+
+.appointment input[type="date"]::-webkit-datetime-edit-text {
+  color: var(--dark-color);
+  padding: 0 0.3em;
+}
+
+.appointment input[type="date"]::-webkit-datetime-edit-month-field,
+.appointment input[type="date"]::-webkit-datetime-edit-day-field,
+.appointment input[type="date"]::-webkit-datetime-edit-year-field {
+  color: var(--dark-color);
+}
+
+.appointment input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+.appointment input[type="date"]::-webkit-clear-button {
+  display: none;
+}
+
+/* Стили для неактивного состояния */
+.appointment input[type="date"]:not(:focus):invalid {
+  color: #666;
 }
 
 .appointment input:focus {
   border-color: var(--primary-color);
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .appointment input {
+    font-size: 15px;
+    padding: 12px;
+  }
+  
+  .appointment input[type="date"] {
+    min-height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .appointment input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .appointment input[type="date"] {
+    min-height: 44px;
+  }
 }
 
 .hint-animation {
