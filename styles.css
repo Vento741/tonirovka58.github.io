@@ -272,7 +272,7 @@ header .logo .accent {
 .hero {
   position: relative;
   color: var(--light-color);
-  padding: 150px 0 100px;
+  padding: 120px 0 80px;
   text-align: center;
   margin-top: 60px;
   overflow: hidden;
@@ -335,6 +335,177 @@ header .logo .accent {
   font-weight: 500;
   opacity: 0.9;
   padding: 15px 20px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  min-width: 200px;
+  text-align: center;
+}
+
+.btn-telegram {
+  background: #2AABEE;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+  padding: 12px 28px;
+  border: 2px solid #2AABEE;
+}
+
+.btn-telegram:hover {
+  background: transparent;
+  border-color: #2AABEE;
+  transform: translateY(-2px);
+}
+
+.btn-telegram i {
+  font-size: 20px;
+  animation: telegramBounce 2s infinite;
+}
+
+.telegram-pulse {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(42, 171, 238, 0.4);
+  border-radius: 5px;
+  left: 0;
+  top: 0;
+  animation: telegramPulse 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes telegramBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes telegramPulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* Медиа-запросы для кнопок */
+@media (max-width: 768px) {
+  .hero {
+    padding: 100px 0 60px;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+    margin-top: 25px;
+    padding: 0 20px;
+    max-width: 100%;
+  }
+
+  .btn {
+    min-width: 180px;
+  }
+
+  .btn-telegram {
+    padding: 12px 20px;
+    font-size: 14px;
+    min-width: 250px;
+  }
+
+  .btn-telegram i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 0 50px;
+  }
+
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .hero h1 {
+    padding: 15px 20px;
+  }
+
+  .hero .typing-text {
+    padding: 15px 20px;
+  }
+
+  .hero-buttons {
+    gap: 12px;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .btn,
+  .btn-telegram {
+    width: 100%;
+    max-width: none;
+    justify-content: center;
+    padding: 14px 15px;
+    font-size: 15px;
+    border-radius: 8px;
+    margin: 0;
+  }
+
+  .btn-telegram span {
+    font-weight: 600;
+  }
+
+  .btn-telegram i {
+    font-size: 20px;
+  }
+
+  .telegram-pulse {
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero-buttons {
+    width: 80%;
+    max-width: 300px;
+  }
+
+  .btn,
+  .btn-telegram {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
 }
 
 /* Секции */
@@ -2138,4 +2309,18 @@ footer p {
 /* Скрываем подсказку после первого взаимодействия */
 .service-item.interacted .hint-animation {
   display: none;
+}
+
+.btn-telegram .mobile-text {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .btn-telegram .desktop-text {
+    display: none;
+  }
+  
+  .btn-telegram .mobile-text {
+    display: inline-block;
+  }
 }
