@@ -2344,6 +2344,70 @@ section {
   border-color: var(--light-color);
 }
 
+@media (max-width: 320px) {
+  .footer-social {
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .footer-social .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social .social-icon i {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 393px) {
+  .footer-social {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .footer-social .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social .social-icon i {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-social .social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social .social-icon i {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-social {
+    gap: 20px;
+    margin-top: 20px;
+  }
+
+  .footer-social .social-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-social .social-icon i {
+    font-size: 35px;
+  }
+}
+
 /* Медиа-запросы для социальных иконок */
 @media (max-width: 768px) {
   .social-icons {
