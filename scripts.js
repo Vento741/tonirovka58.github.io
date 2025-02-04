@@ -456,3 +456,26 @@ window.addEventListener('scroll', checkHeroVisibility, { passive: true });
 
 // Проверяем видимость при загрузке страницы
 checkHeroVisibility();
+
+// Параллакс-эффект для фоновых изображений
+document.addEventListener('DOMContentLoaded', () => {
+  const parallaxSections = document.querySelectorAll('.services, .portfolio, .about, .contacts, .appointment, .detailed-services');
+  
+  // Проверяем, поддерживается ли параллакс на устройстве
+  const supportsParallax = window.matchMedia('(min-width: 769px)').matches && !window.matchMedia('(hover: none)').matches;
+  
+  if (supportsParallax) {
+    window.addEventListener('scroll', () => {
+      requestAnimationFrame(() => {
+        parallaxSections.forEach(section => {
+          const rect = section.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const speed = 0.4;
+            const yPos = -(rect.top * speed);
+            section.style.backgroundPosition = `center ${yPos}px`;
+          }
+        });
+      });
+    }, { passive: true });
+  }
+});
