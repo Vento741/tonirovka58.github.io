@@ -358,7 +358,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Открытие модального окна при клике на слайд
     slide.addEventListener('click', () => {
       modal.classList.add('active');
-      goToModalSlide(index);
+      modalCurrentIndex = index;
+      requestAnimationFrame(() => {
+        goToModalSlide(index);
+      });
       document.body.style.overflow = 'hidden';
     });
   });
@@ -368,10 +371,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function goToModalSlide(index) {
     modalCurrentIndex = index;
-    modalTrack.style.transform = `translateX(-${100 * index}vw)`;
+    const offset = window.innerWidth * index;
+    modalTrack.style.transform = `translateX(-${offset}px)`;
     modalDotButtons.forEach(dot => dot.classList.remove('active'));
     modalDotButtons[index].classList.add('active');
   }
+
+  // Обновление позиции при изменении размера окна
+  window.addEventListener('resize', () => {
+    if (modal.classList.contains('active')) {
+      goToModalSlide(modalCurrentIndex);
+    }
+  });
 
   // Обработчики кнопок модального окна
   modalNext.addEventListener('click', () => {
